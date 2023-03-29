@@ -19,7 +19,7 @@ class ProductController extends Controller
         // Así simplemente devuelve los datos en formato JSON
         //return $products;
 
-        return view('index')->with([
+        return view('products.index')->with([
             'products' => $products
         ]);
     }

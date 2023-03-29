@@ -24,8 +24,87 @@
 <input type="checkbox" id="mi-checkbox" name="mi-checkbox" value="1" onclick="createTypeUser">
 <label for="mi-checkbox">Seleccionar</label>
 
-<script>
 
-</script>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <h2>Ejemplos de compartición de variables</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">1er Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">2do Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">3er Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">4to Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">5to Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">6to Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                    <li>
+                        <div class="ajax">
+                            <h5 class="title-method my-3">7tmo Método</h5>
+                            <p>Compartir usuario con el modelo AJAX</p>
+                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                        </div>
+                    </li>
+                        <br>
+                        <hr>
+
+                </ul>
+            </nav>
+        </div>
+</div>
+<button></button>
 
 @endsection

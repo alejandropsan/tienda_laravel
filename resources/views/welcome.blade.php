@@ -44,8 +44,8 @@
                     <li>
                         <div class="ajax">
                             <h5 class="title-method my-3">2do Método</h5>
-                            <p>Compartir usuario con el modelo AJAX</p>
-                            <button class="btn btn-secondary"><a href="{{ route('send') }}">Ir al método</a></button>
+                            <p>Compartir un tipo de usuario por los controladores</p>
+                            <button class="btn btn-secondary"><a href="{{ route('user.laravel') }}">Ir al método</a></button>
                         </div>
                     </li>
                         <br>

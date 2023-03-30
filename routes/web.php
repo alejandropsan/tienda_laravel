@@ -26,9 +26,16 @@ Route::get('products/{product}/edit', [ProductController::class, 'edit'])->name(
 Route::match(['put', 'patch'], 'products/{product}', [ProductController::class, 'update'])->name('products.update');
 Route::delete('products/{product}', [ProductController::class, 'destroy'])->name('products.destroy');
 
-Route::get('enviar-usuario', [MainController::class, 'getUsers'])->name('send');
 // RUTAS USUARIO
 Route::prefix('users')->group(function(){
     //
+
+    Route::get('/register', function() { return view('user.register'); })->name('register');
+
+    Route::get('/user-session', [MainController::class, 'userType'])->name('user.session');
+    Route::post('/user-session', [MainController::class, 'getUser'])->name('user.session');
+
+    //Route::get('/user-session/{type_user}', [MainController::class, 'userLaravel'])->name('user.type');
 });
+
 

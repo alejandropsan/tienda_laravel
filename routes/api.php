@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Models\User;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,4 +24,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/crear-variable', [MainController::class, 'userType'])->name('crear.variable');
 
 // MÉTODO AJAX
-Route::post('/get-user-api/{user}', [MainController::class, 'getUser'])->name('get.user');
+//Route::post('/get-user-api/{user}', [MainController::class, 'getUser'])->name('get.user');
+Route::get('/share-type', [MainController::class, 'shareType'])->name('share.type');

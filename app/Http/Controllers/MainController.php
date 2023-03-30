@@ -25,20 +25,43 @@ class MainController extends Controller
         }
     }
 
+    public function userType(){
+        $tipoUser = request()->input('user_type');
+        session(['user_type' => $tipoUser]);
 
 
-    public function userType(Request $request) {
-        $isChecked = $request->input('isChecked');
-        session(['user_type' => $isChecked]);
-        return response()->json(['success' => true]);
+
+        return view('user.user_session')->with([
+            'user_type' => $tipoUser
+        ]);
     }
 
-    public function getUser($user){
-        $user = User::findOrFail($user);
+    public function shareType(){
+        $shareUser = request()->input('user_type');
+        session(['user_type' => $shareUser]);
 
-         return view('get.user')->with([
-            'user' => $user
-         ]);
+        return view('user.user_session')->with([
+            'user_type' => $shareUser
+        ]);
+    }
+
+    public function createUser(){
+
+        $data = [
+            $user_nombre = request()->nombre,
+            $user_dni = request()->dni,
+            $user_vat = request()->vat,
+            $user_type = request()->input('user_type')
+        ];
+        dd($data);
+    }
+
+
+    public function getUser(){
+        $user = request()->all();
+        dd($user);
     }
 
 }
+
+

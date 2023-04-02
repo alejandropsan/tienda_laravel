@@ -3,6 +3,7 @@
 {{-- SECTION HACE REFERENCIA AL YIELD DEL LAYOUT MASTER --}}
 @section('content')
 
+
 <h1>Listado de productos</h1>
 
 <a class="btn btn-success" href="{{ route('products.create') }}">Crear</a>

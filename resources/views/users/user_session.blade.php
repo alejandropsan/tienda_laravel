@@ -1,6 +1,9 @@
 @extends('layouts.master')
 @section('content')
 
+@if(session()->has('particular'))
+    Aquí está la sesión
+@endif
 
 <div class="container">
     <div class="row">
@@ -35,6 +38,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Enviar</button>
+
     </form>
 
     @endif

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Product;
 use App\Http\Controllers\MainController;
 
+
 class ProductController extends Controller
 {
     public function index(){

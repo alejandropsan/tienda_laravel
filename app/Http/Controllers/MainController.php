@@ -15,21 +15,20 @@ class MainController extends Controller
     public function getUsers()
     {
         try {
-            $users = \DB::table('users')->get();
+            $users = User::all();
 
-            return view('send')->with([
+            return view('users.send')->with([
                 'users' => $users
             ]);
         } catch (\Exception $e) {
             dd($e->getMessage());
         }
+
     }
 
     public function userType(){
         $tipoUser = request()->input('user_type');
         session(['user_type' => $tipoUser]);
-
-
 
         return view('user.user_session')->with([
             'user_type' => $tipoUser
@@ -59,7 +58,7 @@ class MainController extends Controller
 
     public function getUser(){
         $user = request()->all();
-        dd($user);
+        return "El usuario ha sido enviado correctamente";
     }
 
 }
